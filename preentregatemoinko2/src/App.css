@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 8vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  
+}
+.App-header ul{
+  display: flex;
+}
+.App-header ul li {
+  flex: left;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 2vh;
+  
+}
+.App-header ul li a{
+  margin-left: 2vw;
+}
+.App-header h1{
+  margin-top: 3vh;
+  margin-left: 2vw;
+  text-decoration: none;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.item-list{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1vw;
+
+}
+.card{
+  -webkit-border-radius: 40px 0px 40px 0px;
+-moz-border-radius: 40px 0px 40px 0px;
+border-radius: 40px 0px 40px 0px;
+border: 5px solid #000000;
+border-radius: 40px 0px 40px 0px;
+max-width: 15vw;
+float: left;
+margin-left: 1vw;
+
+}
+.card-info h6{
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    outline: 0;
+    border-bottom: solid 1px #f75e05;
+}
+
+.card img{
+  max-width: 10vw;
+  padding-top: 1vw;
+}
+
+.card button, .count-btn button, .add-btn{
+	position: relative;
+	display: block;
+	padding: 1vw 1vw;
+  padding-bottom: 2vw;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: bold;
+	max-width: 30vw;
+  margin-left:3.5vw;
+	height: 2vw;
+	margin-bottom: 1vw;
+	overflow: hidden;
+	color:rgba(255,255,255,1);
+	cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:#f75e05;
+}
+ 
+.card button:after,
+.card button:before, .count-btn:after, .count-btn:before, .add-btn:after, .add-btn:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+ 
+.card button:before, .count-btn button:before, .add-btn button:before{
+	left: -48%;
+}
+ 
+.card button:hover, .count-btn button:hover, .add-btn button:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#f75e05
+}
+ 
+.card button:hover:after, .card button:hover:before, .count-btn button:after, .count-btn button:before,.add-btn button:after, .add-btn button:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+ 
+.card button:hover:after, .count-btn button:after, .add-btn button:after{
+	right: 130%;
+}
+ 
+.card button:hover:before, .count-btn button:before, .add-btn button:before{
+	left: 130%;
+}
+
+
+.item-detail-container{
+  margin: 2vw;
+  padding: 1vw;
+  
+}
+
+.item-detail{
+  -webkit-border-radius: 40px 0px 40px 0px;
+  -moz-border-radius: 40px 0px 40px 0px;
+  border-radius: 40px 0px 40px 0px;
+  border: 5px solid #000000;
+  
+  border-radius: 40px 0px 40px 0px;
+  max-width: 50vw;
+  display: flex;
+  margin-left: 10vw;
+  align-items: flex-start;
+  background-color: #f75e05;
+  
+}
+.item-detail-info{
+  
+  margin-left: 2vw;
+}
+.item-desc{
+  font-size: 1vw;
+  color: white;
+}
+.item-price{
+  font-size: 1vw;
+  color: white;
+}
+
+.item-detail img{
+  max-width: 20vw;
+  padding: 1vw;
+  padding-left: 3vw;
+  border: 1px solid white;
+  background-color: white;
+  -webkit-border-radius: 80px 0px 0px 0px;
+  -moz-border-radius: 80px 0px 0px 0px;
+  border-radius: 35px 0px 0px 0px;
+}
+.container-count{
+  border: white 2px solid;
+  background-color: white;
+  width: 8vw;
+  padding: 2vw;
+  border-radius: 10%;
+  margin-left: 5vw;
+
+}
+.count-btn{
+  display: flex;
+  align-items: flex-start; 
+
+}
+
+.count-btn button{
+  margin-left: 1vw;
+}
+.add-btn{
+  width: 9vw;
+  margin-left: 0vw;
+}
+.count-btn p{
+  margin-left: 1vw;
+}
+
+.active{
+  color : white;
+  border-bottom: white 1px solid;
+}
+
+a {
+  text-decoration: none;
+
+}
