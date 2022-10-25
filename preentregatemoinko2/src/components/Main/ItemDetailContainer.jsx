@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import { db } from '../../services/firebaseConfig';
 import { collection, doc, getDocs } from 'firebase/firestore';
-
+//holaaaaa seugndo commit 
 const ItemDetailContainer = () => {
 
         const [item, setItem] = useState({});
