@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-const ItemListNav = (props) =>{
+import {  NavLink } from "react-router-dom";
+const ItemListNav = ({sec}) =>{
     const menu={
         'text-decoration':'none',
         'color':'white',
@@ -8,7 +8,7 @@ const ItemListNav = (props) =>{
        }
     return(
             
-            <NavLink style={menu} to={`/category/${props.secciones}`}>{props.secciones}</NavLink>
+            <NavLink style={menu} to={`/category/${sec.path}`}>{sec.name}</NavLink>
 
     )
 }

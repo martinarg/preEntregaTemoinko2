@@ -95,7 +95,7 @@ margin-left: 1vw;
 	text-align: center;
 	font-weight: bold;
 	max-width: 30vw;
-  margin-left:3.5vw;
+  margin-left:1vw;
 	height: 2vw;
 	margin-bottom: 1vw;
 	overflow: hidden;
@@ -106,6 +106,7 @@ margin-left: 1vw;
 	text-decoration: none;
 	transition: all ease 0.5s;
 	background:#f75e05;
+  margin-right: 2vh;
 }
  
 .card button:after,
@@ -121,6 +122,7 @@ margin-left: 1vw;
 	transition: none;
 	right:-45%;
 	cursor: pointer;
+  
 }
  
 .card button:before, .count-btn button:before, .add-btn button:before{
@@ -215,6 +217,33 @@ margin-left: 1vw;
 .count-btn p{
   margin-left: 1vw;
 }
+.botonCarrito {
+	box-shadow:inset 0px -3px 7px 0px #ffc32b;
+	background:linear-gradient(to bottom, #ff8b0f 5%, #ff9900 100%);
+	background-color:#ff8b0f;
+	border-radius:3px;
+	border:3px solid #fff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff8c00;
+}
+.botonCarrito:hover {
+	background:linear-gradient(to bottom, #ff9900 5%, #ff8b0f 100%);
+	background-color:#ff9900;
+}
+.botonCarrito:active {
+	position:relative;
+	top:1px;
+}
+.marca{
+  color:#f75e05;
+  font-size: 6vh;
+}
 
 .active{
   color : white;
@@ -224,4 +253,39 @@ margin-left: 1vw;
 a {
   text-decoration: none;
 
+}
+
+.itemCart{
+  display: flex;
+  float: left;
+  border: 2px solid #f75e05;
+  border-radius: 2vh;
+  margin-top: 2vh;
+}
+.itemCart img{
+  margin-left: 10vh;
+  max-width: 20vh;
+ 
+}
+
+.delete,  .vaciarCarro{
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.delete:hover, .vaciarCarro:hover {
+	background-color:#eb675e;
+}
+.delete:active,  .vaciarCarro:active {
+	position:relative;
+	top:1px;
 }

@@ -1,14 +1,40 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ItemListNav from './ItemListNav';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../services/firebaseConfig';
 
-const Menu = (props) => {
- 
+const Menu = () => {
+
+    const [secciones, setSecciones] = useState([]);
+
+    useEffect(() => {
+        const collectionSec= collection(db, 'secciones');
+        getDocs(collectionSec)
+            .then((res) => {
+                //console.log(res.docs);
+                const secciones = res.docs.map((sec) => {
+                    return {
+                        id: sec.id,
+                        ...sec.data(),
+                    };
+                });
+                setSecciones(secciones);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
+    console.log(secciones);
+    
     return(
         <ul>
             <li>
-            {
-                props.secciones.map( (sec,index) =><ItemListNav  key={index} secciones={sec}/>)
-            }
+                {
+                    secciones.map((sec)=>{
+                        return <ItemListNav  key={sec.id} sec={sec}/>
+                    })
+                }
             </li>
             <li><Link to="/Form">Credito</Link></li>
         </ul>

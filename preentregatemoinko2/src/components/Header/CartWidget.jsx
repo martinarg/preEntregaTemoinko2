@@ -1,9 +1,11 @@
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faCartShopping} from '@fortawesome/free-solid-svg-icons';
-import { useState } from "react";
+import React, { useContext } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import {CartContext} from '../../context/CartContext';
 
 function CartWidget(){
-    const [carroQ, setState] = useState(1);
+  const {totalUnidades} = useContext(CartContext);
+  const total = totalUnidades();
     const iconoStyles = { 
         'color':'white',
         'margin-top': '3vh',
@@ -23,8 +25,8 @@ function CartWidget(){
     return(
         
         <>
-       {/* <FontAwesomeIcon style={iconoStyles} icon={faCartShopping} /> */}
-        <span style={numeroCarro}>{carroQ}</span>
+        <FontAwesomeIcon style={iconoStyles} icon={faCartShopping} /> 
+        <span style={numeroCarro}>{total}</span>
         </>
     )
 

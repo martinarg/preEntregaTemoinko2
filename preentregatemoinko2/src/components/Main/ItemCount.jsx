@@ -1,24 +1,32 @@
 //import { counter } from '@fortawesome/fontawesome-svg-core';
 import React, {useState} from 'react'
+import { useEffect } from 'react';
 
-const ItemCount = (props) =>{
-    const [count, setCounter] = useState(props.initial);
+const ItemCount = ({stock, initial = 1, addicionarCarro}) =>{
+    const [count, setCount] = useState(initial);
     const sumar =() =>{
-       count < props.stock && setCounter(count+1);     
+       count < stock && setCount(count+1);     
     };
      const restar =() =>{
-        count > props.initial && setCounter(count-1)
+        count > initial && setCount(count-1)
       
     }
+     const add = () =>{
+        addicionarCarro(count);
+    }
+    useEffect(()=>{
+        setCount(initial);
+    }, [initial])
+   
   
     return(
         <div className='container-count'>
             <div className='count-btn'>
-                <button onClick={sumar}>+</button>
+                <button disabled={count === stock} onClick={sumar}>+</button>
                 <p>{count}</p>
                 <button onClick={restar}>-</button>
             </div>
-            <button onClick={()=>{props.contar(count)}} className='add-btn'>Agregar al carrito</button>
+            <button onClick={add} className='add-btn'>Agregar al carrito</button>
         
         </div>
     );

@@ -1,28 +1,26 @@
-import React from 'react';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import CartProduct from './CartProduct';
 import { CartContext } from '../../context/CartContext';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () =>{
-   const { cart, deleteAll } = useContext(CartContext);
+   const { cart, deleteAll, totalValor} = useContext(CartContext);
+   if(cart.length === 0){
+      return <h1>El carro está vacío</h1>
+   }
    return (
    <div>
-   {cart.map((prod) => {
-      <div>
-         <img src={prod.img} alt={prod.title}/>
-         <div>
-            <h2>{prod.title}</h2>
-            <h3>{prod.price}</h3>
-            <h3>{prod.cantidad}</h3>
-            <h3>Subtotal ${prod.price*prod.cantidad}</h3>
-            <button>Delete</button>
-         </div>
-      </div>
-      
-      })
-   }
-   <h2>Total: $0</h2>
-   <button onClick={deleteAll}>Vaciar carrito</button>
+ 
+    
+         <CartProduct prodCart={cart}></CartProduct>
+
+   <h2>Total: {totalValor()}</h2>
+   <button className='vaciarCarro' onClick={deleteAll}>Vaciar carrito</button>
+   <Link to={"/checkout"}>Ir al checkout</Link>
    </div>
+  
  );
 };
 export default Cart;

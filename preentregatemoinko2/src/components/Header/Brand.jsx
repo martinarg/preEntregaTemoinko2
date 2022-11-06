@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ const Brand = (props) =>{
        
     return (
        
-            <Link to='/'>{props.marca}</Link>
+            <Link to='/' className="marca">{props.marca}</Link>
        
     )
 }
