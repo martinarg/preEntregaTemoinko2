@@ -71,7 +71,7 @@ border-radius: 40px 0px 40px 0px;
 max-width: 15vw;
 float: left;
 margin-left: 1vw;
-
+margin-top: 2vh;
 }
 .card-info h6{
     white-space: nowrap;
@@ -404,9 +404,6 @@ input:hover {
   background: #b3aca7;
   color: #e2dedb;
 }
-
-
-
 
 
 .submit {

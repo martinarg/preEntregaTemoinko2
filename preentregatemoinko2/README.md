@@ -6,6 +6,7 @@
 - [Firebase](https://firebase.google.com/) para almacenamiento de los productos, visualización de las categorías y almacenamiento de los pedidos
 - [Toastify](https://fkhadra.github.io/react-toastify/introduction) para mostrar mensajes que informen al usuario de lo ocurrido, ya sea cuando agrega un producto al carrito, envio del pedido y si no coincide el mail en el checkout
 -  [React router](domhttps://reactrouter.com/en/main) , para la navegación entre los distintas páginas del sitio
+-  [Sync Loader](https://www.npmjs.com/package/sync-loader) , para mostrar nuestro cargando
 
 ### Iniciar el proyecto de manera local
 
