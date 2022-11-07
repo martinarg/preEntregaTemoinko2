@@ -10,9 +10,10 @@
 
 ### Iniciar el proyecto de manera local
 
-1- descargar el proyecto desde git (git clone) https://github.com/martinarg/preEntregaTemoinko2/tree/main/preentregatemoinko2
+1- descargar el proyecto desde git (git clone) https://github.com/martinarg/preEntregaTemoinko2
 
-2-abrir la terminal y ubicarte en la carpeta del proyecto, escribir en la terminal 
+
+2-abrir la terminal pararte en la carpeta preentregatemoinko2  y ubicarte en la carpeta del proyecto, escribir en la terminal 
 
 ` npm i`
 
