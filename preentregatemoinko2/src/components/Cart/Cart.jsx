@@ -2,8 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartProduct from './CartProduct';
 import { CartContext } from '../../context/CartContext';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const Cart = () =>{
    const { cart, vaciarCarro, totalValor} = useContext(CartContext);
