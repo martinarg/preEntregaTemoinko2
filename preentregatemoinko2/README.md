@@ -1,15 +1,6 @@
 # Trophy Deportes app E-commerce
 ![](https://trophy.com.ar/imagenes/footer/logonuevochico.png)
 
-**Tabla de contenido**
-
-[TOCM]
-
-[TOC]
-
-
-
-
 ### Recursos
 - Desarrollamos toda la app con [ Reac Js ](https://es.reactjs.org/)
 - [Firebase](https://firebase.google.com/) para almacenamiento de los productos, visualización de las categorías y almacenamiento de los pedidos
