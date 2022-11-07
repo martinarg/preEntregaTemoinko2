@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import ItemListNav from './ItemListNav';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../services/firebaseConfig';
@@ -25,7 +25,7 @@ const Menu = () => {
                 console.log(error);
             });
     }, []);
-    console.log(secciones);
+    //console.log(secciones);
     
     return(
         <ul>
@@ -36,7 +36,7 @@ const Menu = () => {
                     })
                 }
             </li>
-            <li><Link to="/Form">Credito</Link></li>
+           
         </ul>
       
     )

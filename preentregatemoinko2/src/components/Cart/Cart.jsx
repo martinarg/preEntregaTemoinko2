@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () =>{
-   const { cart, deleteAll, totalValor} = useContext(CartContext);
+   const { cart, vaciarCarro, totalValor} = useContext(CartContext);
    if(cart.length === 0){
       return <h1>El carro está vacío</h1>
    }
@@ -17,8 +17,8 @@ const Cart = () =>{
          <CartProduct prodCart={cart}></CartProduct>
 
    <h2>Total: {totalValor()}</h2>
-   <button className='vaciarCarro' onClick={deleteAll}>Vaciar carrito</button>
-   <Link to={"/checkout"}>Ir al checkout</Link>
+   <button className='vaciarCarro' onClick={vaciarCarro}>Vaciar carrito</button>
+   <Link to={"/form"}>Ir al checkout</Link>
    </div>
   
  );

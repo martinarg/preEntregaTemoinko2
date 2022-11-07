@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Trophy Deportes app
+![](https://trophy.com.ar/imagenes/footer/logonuevochico.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Tabla de contenido**
 
-## Available Scripts
+[TOCM]
 
-In the project directory, you can run:
+[TOC]
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Recursos
+- Desarrollamos toda la app con [ Reac Js ](https://es.reactjs.org/)
+- [Firebase](https://firebase.google.com/) para almacenamiento de los productos, visualización de las categorías y almacenamiento de los pedidos
+- [Toastify](https://fkhadra.github.io/react-toastify/introduction) para mostrar mensajes que informen al usuario de lo ocurrido, ya sea cuando agrega un producto al carrito, envio del pedido y si no coincide el mail en el checkout
+-  [React router](domhttps://reactrouter.com/en/main) , para la navegación entre los distintas páginas del sitio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Iniciar el proyecto de manera local
 
-### `npm test`
+1- descargar el proyecto desde git (git clone) https://github.com/martinarg/preEntregaTemoinko2/tree/main/preentregatemoinko2
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2-abrir la terminal y ubicarte en la carpeta del proyecto, escribir en la terminal 
 
-### `npm run build`
+` npm i`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+asi se instalan todas las librerías necesarias para el proyecto,
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3- Por último, iniciamos el proyecto con poniendo en nuestra terminal:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+` npm start`
 
-### `npm run eject`
+De esta manera su proyecto se inicia localmente
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Funcionalidades
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+####Header
+- Dispones de las distintas categorías para filtrar los productos y si haces click en Trophy Deportes te muestra todos los productos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+####En vista del producto
+- vas a poder ver el producto con sus caracteristicas y seleccionar la cantidad deseada la cual tiene un limitador por el stock disponible.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+####carro
+- vas a poder ver ver todos los productos que se agregaron, si deseas podes eliminar algun elemento o vaciar el carro
 
-## Learn More
+####checkout
+- El usuario cargará sus datos personales nombre, mail , telefono y al hacer click en enviar, su pedido será almacenado en firebase y al usuario le mostrará su Id del pedido
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- El usuario deberá escribir dos veces su email para asegurarnos de tenerlo bien, en caso que no coincidan se le mostrá un cartel de warning
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Fin 

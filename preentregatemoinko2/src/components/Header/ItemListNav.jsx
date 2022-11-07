@@ -2,9 +2,9 @@ import React from "react";
 import {  NavLink } from "react-router-dom";
 const ItemListNav = ({sec}) =>{
     const menu={
-        'text-decoration':'none',
+        'textDecoration':'none',
         'color':'white',
-        'margin-top':'2vh'
+        'marginTop':'2vh'
        }
     return(
             

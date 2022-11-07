@@ -8,18 +8,18 @@ function CartWidget(){
   const total = totalUnidades();
     const iconoStyles = { 
         'color':'white',
-        'margin-top': '3vh',
-        'margin-left': '1vw'
+        'marginTop': '3vh',
+        'marginLeft': '1vw'
     }
  
     const numeroCarro = { 
         'background': 'white',
-       'border-radius': '45%',
+       'borderRadius': '45%',
         'width': '10vw',
         'height': '10vw',
         'padding': '0.5vw',
-        'margin-left': '1vw',
-        'font-size':'1vw'
+        'marginLeft': '1vw',
+        'fontSize':'1vw'
     }
     
     return(

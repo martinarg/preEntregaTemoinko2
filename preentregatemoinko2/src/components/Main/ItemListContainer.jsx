@@ -22,14 +22,14 @@ const ItemListContainer = () => {
         .then((res)=>{
             //FALTA FILTRAR EL HOME Y FIREBASE
             const products = res.docs.map((prod)=>{
-                console.log(prod);
+                //console.log(prod);
                 return{
                     id: prod.id,
                     ...prod.data()
                 }
             })
             setItems(products);
-            console.log(res.docs)
+            //console.log(res.docs)
         })
         .catch((error)=>{
             console.log(error)

@@ -16,7 +16,7 @@ const ItemDetail = ({item}) =>{
         //setShow(false);
         setUnidades(cantidad);
         addToCart(item, cantidad);
-        console.log(item);
+        //console.log(item);
         toast.success(`se agregó ${cantidad} unidades`);
 
     }

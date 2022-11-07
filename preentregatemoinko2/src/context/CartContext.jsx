@@ -13,18 +13,18 @@ const Provider = ({children}) =>{
      const addToCart = (item, cantidad) =>{
         
         const producto = {...item, cantidad};
-       console.log(producto);
+       //console.log(producto);
         if(isInCart(producto.id)){
             sumarCantidad(producto);
         }else{
             setCart([...cart, producto]);
-            console.log(cart);
+            //console.log(cart);
         }
     
     }
     const isInCart = (id) => cart.some((prod)=>prod.id === id);
 
-    const deleteAll = () => setCart([]);
+    const vaciarCarro = () => setCart([]);
 
 //borrar un solo producto
     const deleteOne = (id) =>{
@@ -72,7 +72,7 @@ const getProdQuantity = (id) => {
     const product = cart.find((prod) =>prod.id === id);
     return product?.cantidad;
 }
-console.log(cart);
+//console.log(cart);
 //sumar precio total
 
     return(
@@ -82,7 +82,7 @@ console.log(cart);
             value={{ 
                 cart, 
                 addToCart, 
-                deleteAll, 
+                vaciarCarro, 
                 deleteOne, 
                 getProdQuantity,
                 totalUnidades,
