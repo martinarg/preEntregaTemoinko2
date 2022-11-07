@@ -1,4 +1,4 @@
-# Trophy Deportes app
+# Trophy Deportes app E-commerce
 ![](https://trophy.com.ar/imagenes/footer/logonuevochico.png)
 
 **Tabla de contenido**
@@ -6,6 +6,8 @@
 [TOCM]
 
 [TOC]
+
+
 
 
 ### Recursos
@@ -32,16 +34,16 @@ De esta manera su proyecto se inicia localmente
 
 ### Funcionalidades
 
-####Header
+#### Header
 - Dispones de las distintas categorías para filtrar los productos y si haces click en Trophy Deportes te muestra todos los productos.
 
-####En vista del producto
+#### En vista del producto
 - vas a poder ver el producto con sus caracteristicas y seleccionar la cantidad deseada la cual tiene un limitador por el stock disponible.
 
-####carro
+#### Carro
 - vas a poder ver ver todos los productos que se agregaron, si deseas podes eliminar algun elemento o vaciar el carro
 
-####checkout
+#### Checkout
 - El usuario cargará sus datos personales nombre, mail , telefono y al hacer click en enviar, su pedido será almacenado en firebase y al usuario le mostrará su Id del pedido
 
 - El usuario deberá escribir dos veces su email para asegurarnos de tenerlo bien, en caso que no coincidan se le mostrá un cartel de warning
